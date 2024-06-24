@@ -1,0 +1,35 @@
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    padding: 4px;
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+
+    .close {
+        display: grid;
+        place-items: center;
+        border-radius: 100%;
+        cursor: pointer;
+        color: rgb(149, 70, 70);
+        line-height: 12px;
+        font-size: 10px;
+        width: 12px;
+        height: 12px;
+        transition: all 0.25s;
+
+        &:hover {
+            background-color: rgb(149, 70, 70);
+            color: white;
+        }
+    }
+}
+
+.active {
+    width: 200px;
+    opacity: 1;
+}
